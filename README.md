@@ -1,7 +1,4 @@
-<img alt="" src="https://img.shields.io/github/repo-size/NKKFu/biingo" />
-<img alt="GitHub Issues" src="https://img.shields.io/github/issues/NKKFu/biingo" />
-<img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/NKKFu/biingo" />
-<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/NKKFu/biingo" />
+<img alt="" src="https://img.shields.io/github/repo-size/NKKFu/biingo" /> <img alt="GitHub Issues" src="https://img.shields.io/github/issues/NKKFu/biingo" /> <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/NKKFu/biingo" /> <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/NKKFu/biingo" />
 
 <p style="margin: 40px 0;" align="center">
   <a href="https://github.com/NKKFu">
