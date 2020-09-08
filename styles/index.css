@@ -1,0 +1,67 @@
+body,
+html {
+    margin: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.bingo-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: 1px solid silver;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+}
+
+.list-item {
+    display: flex;
+}
+
+input {
+    display: none;
+}
+
+.number-label {
+    user-select: none;
+    text-align: center;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    background: #f0e1e1;
+    height: 100px;
+    line-height: 100px;
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    transition: background 0.1s;
+}
+
+.checked {
+    background: tomato;
+}
+
+.create-button {
+    transition: background 0.1s;
+    flex: 1;
+    background: #8ae690;
+    color: #FFF;
+    font-weight: bolder;
+    padding: 50px;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-button:hover {
+    background: #6dc973;
+    cursor: pointer;
+}
+
+.create-button:active {
+    background: #4fa855;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biingo | Play</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Seus números da sorte, clique para preenchê-los</h1>
+    <section>
+        <ul id="bingo-container" class="bingo-container">
+
+        </ul>
+    </section>
+    <div class="create-button" onclick="sortNumbers()">
+        Criar nova tabela de bingo
+    </div>
+</body>
+
+<script>
+    const parentOfNumbers = document.getElementById('bingo-container');
+    const currentNumbers = [];
+
+    function clearBingoTable() {
+        currentNumbers.length = 0;
+        parentOfNumbers.innerHTML = "";
+    }
+
+    function sortNumbers() {
+        clearBingoTable();
+        for (let index = 0; currentNumbers.length < 20; index++) {
+            const randomNumber = (Math.random() * 100).toFixed(0);
+            if (currentNumbers.indexOf(randomNumber) != -1) {
+                continue;
+            }
+
+            currentNumbers.push(randomNumber);
+
+            const createdNumber = document.createElement('li');
+            createdNumber.onclick = function() {
+                checkInput(randomNumber)
+            };
+            createdNumber.className = "number-label";
+            createdNumber.innerHTML = randomNumber;
+
+            parentOfNumbers.appendChild(createdNumber);
+        }
+    }
+
+    function checkInput(labelNumber) {
+        const numbers = document.getElementsByClassName('number-label');
+        for (let i = 0; i < numbers.length; i++) {
+            const element = numbers[i];
+            if (labelNumber == element.innerHTML) {
+                element.classList.toggle('checked');
+                break;
+            }
+        }
+    }
+</script>
+
+</html>
