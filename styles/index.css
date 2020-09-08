@@ -15,15 +15,12 @@ html {
     border: 1px solid silver;
     flex-wrap: wrap;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    background: #e6e6e6;
 }
 
 .list-item {
     display: flex;
-}
-
-input {
-    display: none;
 }
 
 .number-label {
@@ -31,8 +28,7 @@ input {
     text-align: center;
     border: 1px solid #ddd;
     cursor: pointer;
-    background: #f0e1e1;
-    height: 100px;
+    background: #ffaf99;
     line-height: 100px;
     color: white;
     font-weight: bold;
@@ -42,7 +38,7 @@ input {
 }
 
 .checked {
-    background: tomato;
+    background: #a9ed5a;
 }
 
 .create-button {
